@@ -4,6 +4,8 @@ const webpack = require("webpack");
 const dotenv = require("dotenv");
 const env = dotenv.config().parsed;
 
+console.log('webpack', env);
+
 module.exports = {
   entry: "./index.js",
   mode: "development",
