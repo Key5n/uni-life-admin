@@ -4,7 +4,7 @@ const webpack = require("webpack");
 const dotenv = require("dotenv");
 const env = process.env.NODE_ENV === 'production' ? process.env : dotenv.config({ path: '.env.local' }).parsed;;
 
-console.log('node env', process.env.NODE_ENV);
+console.log('node env', process.env);
 console.log('webpack', env);
 
 module.exports = {
